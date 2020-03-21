@@ -1,0 +1,9 @@
+@import "mixin.scss";
+
+@include font-face("Montserrat-Black", "../fonts/Montserrat-Black");
+@include font-face("Montserrat-Light", "../fonts/Montserrat-Light");
+@include font-face("Montserrat-Medium", "../fonts/Montserrat-Medium");
+* {
+  margin: 0;
+  padding: 0;
+}
