@@ -1,0 +1,161 @@
+.tanner {
+  width: 100%;
+  padding-top: 100px;
+
+  &__title {
+    text-align: center;
+    color: #000;
+    font-family: "Montserrat-Bold";
+    font-size: 36px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    padding-bottom: 15px;
+  }
+
+  &__subtitle {
+    color: #383838;
+    background: #b8a47e;
+    font-size: 14px;
+    font-family: "Montserrat-Light";
+    letter-spacing: 1px;
+    display: block;
+    width: 300px;
+    position: relative;
+    margin-left: calc(50% + 60px);
+
+    &:before {
+      content: "";
+      position: absolute;
+      height: 1px;
+      width: 50px;
+      background: #b8a47e;
+      top: 50%;
+      left: -60px;
+    }
+  }
+
+  &__primary-block {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top: 80px;
+
+    &-bg {
+      width: 60%;
+      position: relative;
+
+      &:before {
+        content: "01";
+        position: absolute;
+        color: #383838;
+        font-family: "Montserrat-Bold";
+        opacity: 0.5;
+        text-transform: uppercase;
+        letter-spacing: 4px;
+        font-size: 36px;
+        // top: 50%;
+        // left: -60px;
+      }
+    }
+
+    &-img {
+      width: 100%;
+    }
+
+    &-content {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      width: 40%;
+    }
+  }
+
+  &__block-title {
+    color: #000;
+    font-size: 18px;
+    font-family: "Montserrat-Bold";
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+
+  &__block-text {
+    color: #383838;
+    font-size: 14px;
+    font-family: "Montserrat-Light";
+    letter-spacing: 1px;
+    padding: 30px 0;
+  }
+
+  &__block-link {
+    text-decoration: none;
+    color: #000;
+    font-size: 12px;
+    font-family: "Montserrat-Bold";
+    text-transform: uppercase;
+    cursor: pointer;
+    position: relative;
+
+    &:hover {
+      opacity: 0.5;
+    }
+
+    &:after {
+      position: absolute;
+      content: "";
+      background: url("../imgs/SliderArrowNext.svg");
+      background-repeat: no-repeat;
+      background-size: contain;
+      width: 40px;
+      height: 20px;
+      display: block;
+      top: -4px;
+      left: 80px;
+    }
+  }
+
+  &__secondary-block {
+    width: 100%;
+    display: flex;
+    padding-top: 50px;
+    justify-content: center;
+    margin-top: -100px;
+
+    &-content {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      // margin: 0 80px;
+      width: 30%;
+    }
+
+    &-bg {
+      width: 30%;
+    }
+
+    &-img {
+      width: 100%;
+    }
+  }
+
+  &__additional-block {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+
+    &-content {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      width: 30%;
+      // margin: 0 80px;
+    }
+
+    &-bg {
+      width: 30%;
+    }
+    &-img {
+      width: 100%;
+    }
+  }
+}
