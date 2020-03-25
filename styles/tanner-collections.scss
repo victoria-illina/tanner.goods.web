@@ -27,7 +27,7 @@
       content: "";
       position: absolute;
       height: 1px;
-      width: 50px;
+      width: 80px;
       background: #b8a47e;
       top: 50%;
       left: -60px;
@@ -38,7 +38,7 @@
     width: 100%;
     display: flex;
     justify-content: center;
-    padding-top: 80px;
+    padding: 50px;
 
     &-bg {
       width: 60%;
@@ -53,8 +53,18 @@
         text-transform: uppercase;
         letter-spacing: 4px;
         font-size: 36px;
-        // top: 50%;
-        // left: -60px;
+        top: -20px;
+        left: 0px;
+      }
+
+      &:after {
+        content: "";
+        position: absolute;
+        height: 1px;
+        width: 80px;
+        background: #000;
+        top: 0;
+        left: 45px;
       }
     }
 
@@ -67,6 +77,7 @@
       justify-content: center;
       flex-direction: column;
       width: 40%;
+      margin-right: 70px;
     }
   }
 
@@ -76,6 +87,48 @@
     font-family: "Montserrat-Bold";
     text-transform: uppercase;
     letter-spacing: 1px;
+
+    &-line {
+      position: relative;
+
+      &:before {
+        content: "";
+        position: absolute;
+        height: 45px;
+        width: 1px;
+        background: #000;
+        top: -50px;
+        left: 0;
+      }
+    }
+
+    &-bg {
+      position: relative;
+      display: block;
+
+      &:before {
+        content: "";
+        position: absolute;
+        height: 80px;
+        width: 1px;
+        background: #000;
+        top: -80px;
+        left: 10px;
+      }
+
+      &:after {
+        content: "";
+        position: absolute;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background: #b8a47e;
+        width: 300px;
+        height: 100%;
+        left: -20px;
+        z-index: -1;
+        top: 40%;
+      }
+    }
   }
 
   &__block-text {
@@ -116,20 +169,41 @@
   &__secondary-block {
     width: 100%;
     display: flex;
-    padding-top: 50px;
     justify-content: center;
-    margin-top: -100px;
+    align-items: center;
+    margin-top: -120px;
 
     &-content {
-      display: flex;
-      justify-content: center;
-      flex-direction: column;
-      // margin: 0 80px;
       width: 30%;
+      margin-right: 70px;
     }
 
     &-bg {
       width: 30%;
+      position: relative;
+
+      &:before {
+        content: "";
+        position: absolute;
+        height: 80px;
+        width: 1px;
+        background: #000;
+        top: -75px;
+        left: 30%;
+      }
+
+      &:after {
+        content: "";
+        position: absolute;
+        background: url("../imgs/TannerLogoGrey.png");
+        background-repeat: no-repeat;
+        display: block;
+        background-size: contain;
+        width: 100px;
+        height: 50px;
+        top: -75px;
+        left: 35%;
+      }
     }
 
     &-img {
@@ -141,19 +215,32 @@
     width: 100%;
     display: flex;
     justify-content: center;
-    padding-top: 50px;
+    align-items: center;
+    padding: 50px 0 80px;
 
     &-content {
-      display: flex;
-      justify-content: center;
-      flex-direction: column;
       width: 30%;
-      // margin: 0 80px;
+      margin-left: 70px;
     }
 
     &-bg {
       width: 30%;
+      position: relative;
+
+      &:before {
+        content: "02";
+        position: absolute;
+        color: #383838;
+        font-family: "Montserrat-Bold";
+        opacity: 0.5;
+        text-transform: uppercase;
+        letter-spacing: 4px;
+        font-size: 36px;
+        top: -15px;
+        right: -10px;
+      }
     }
+
     &-img {
       width: 100%;
     }
