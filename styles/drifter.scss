@@ -13,15 +13,17 @@
     margin-right: -30%;
     position: relative;
     margin-left: 10%;
+
     &:before {
       content: "";
       position: absolute;
-      background: #fff;
+      background: $additional-color;
       width: 100px;
       height: 20px;
       left: 90px;
       bottom: -10px;
     }
+
     &:after {
       content: "";
       position: absolute;
@@ -36,30 +38,33 @@
     }
 
     &-text {
-      color: #a7a7a7;
-      font-family: "Montserrat-Light";
-      font-size: 14px;
+      color: $color;
+      font-family: $font-family-light;
+      font-size: $font-size-small;
       line-height: 30px;
       padding: 50px;
       width: 40%;
       margin-right: 50%;
     }
   }
+
   &__title {
     position: absolute;
     left: 45%;
+
     &-text {
       position: relative;
-      color: #fff;
-      font-family: "Montserrat-Bold";
-      font-size: 36px;
+      color: $additional-color;
+      font-family: $font-family-bold;
+      font-size: $font-size-title;
       text-transform: uppercase;
       letter-spacing: 4px;
+
       &:after {
         content: "NAVY SALT & PEPPER";
         position: absolute;
-        font-size: 14px;
-        font-family: "Montserrat-Light";
+        font-size: $font-size-small;
+        font-family: $font-family-light;
         letter-spacing: 1px;
         display: block;
         left: 40px;

@@ -1,22 +1,26 @@
+@import "mixin.scss";
+
+@import "variables.scss";
+
 .tanner {
   width: 100%;
   padding-top: 100px;
 
   &__title {
     text-align: center;
-    color: #000;
-    font-family: "Montserrat-Bold";
-    font-size: 36px;
+    color: $primary-color;
+    font-family: $font-family-bold;
+    font-size: $font-size-title;
     text-transform: uppercase;
     letter-spacing: 4px;
     padding-bottom: 15px;
   }
 
   &__subtitle {
-    color: #383838;
-    background: #b8a47e;
-    font-size: 14px;
-    font-family: "Montserrat-Light";
+    color: $secondary-color;
+    background: $active-color;
+    font-size: $font-size-small;
+    font-family: $font-family-light;
     letter-spacing: 1px;
     display: block;
     width: 300px;
@@ -28,7 +32,7 @@
       position: absolute;
       height: 1px;
       width: 80px;
-      background: #b8a47e;
+      background: $active-color;
       top: 50%;
       left: -60px;
     }
@@ -47,12 +51,12 @@
       &:before {
         content: "01";
         position: absolute;
-        color: #383838;
-        font-family: "Montserrat-Bold";
+        color: $secondary-color;
+        font-family: $font-family-bold;
         opacity: 0.5;
         text-transform: uppercase;
         letter-spacing: 4px;
-        font-size: 36px;
+        font-size: $font-size-title;
         top: -20px;
         left: 0px;
       }
@@ -62,7 +66,7 @@
         position: absolute;
         height: 1px;
         width: 80px;
-        background: #000;
+        background: $primary-color;
         top: 0;
         left: 45px;
       }
@@ -82,9 +86,9 @@
   }
 
   &__block-title {
-    color: #000;
-    font-size: 18px;
-    font-family: "Montserrat-Bold";
+    color: $primary-color;
+    font-size: $font-size-medium;
+    font-family: $font-family-bold;
     text-transform: uppercase;
     letter-spacing: 1px;
 
@@ -96,7 +100,7 @@
         position: absolute;
         height: 45px;
         width: 1px;
-        background: #000;
+        background: $primary-color;
         top: -50px;
         left: 0;
       }
@@ -111,7 +115,7 @@
         position: absolute;
         height: 80px;
         width: 1px;
-        background: #000;
+        background: $primary-color;
         top: -80px;
         left: 10px;
       }
@@ -121,7 +125,7 @@
         position: absolute;
         background-repeat: no-repeat;
         background-size: contain;
-        background: #b8a47e;
+        background: $active-color;
         width: 300px;
         height: 100%;
         left: -20px;
@@ -132,18 +136,18 @@
   }
 
   &__block-text {
-    color: #383838;
-    font-size: 14px;
-    font-family: "Montserrat-Light";
+    color: $secondary-color;
+    font-size: $font-size-small;
+    font-family: $font-family-light;
     letter-spacing: 1px;
     padding: 30px 0;
   }
 
   &__block-link {
     text-decoration: none;
-    color: #000;
-    font-size: 12px;
-    font-family: "Montserrat-Bold";
+    color: $primary-color;
+    font-size: $font-size-tiny;
+    font-family: $font-family-bold;
     text-transform: uppercase;
     cursor: pointer;
     position: relative;
@@ -167,10 +171,8 @@
   }
 
   &__secondary-block {
+    @include flex();
     width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     margin-top: -120px;
 
     &-content {
@@ -187,7 +189,7 @@
         position: absolute;
         height: 80px;
         width: 1px;
-        background: #000;
+        background: $primary-color;
         top: -75px;
         left: 30%;
       }
@@ -212,10 +214,8 @@
   }
 
   &__additional-block {
+    @include flex();
     width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     padding: 50px 0 80px;
 
     &-content {
@@ -230,12 +230,12 @@
       &:before {
         content: "02";
         position: absolute;
-        color: #383838;
-        font-family: "Montserrat-Bold";
+        color: $secondary-color;
+        font-family: $font-family-bold;
         opacity: 0.5;
         text-transform: uppercase;
         letter-spacing: 4px;
-        font-size: 36px;
+        font-size: $font-size-title;
         top: -15px;
         right: -10px;
       }
