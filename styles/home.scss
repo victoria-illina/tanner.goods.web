@@ -1,3 +1,7 @@
+@import "mixin.scss";
+
+@import "variables.scss";
+
 .home {
   height: 600px;
   width: 100%;
@@ -16,15 +20,17 @@
   &__slider {
     display: flex;
     flex-direction: column;
-    padding-left: 50px;
     align-items: center;
+    padding-left: 50px;
+
     &-arrows {
       position: relative;
       padding: 30px;
       padding-bottom: 80px;
+
       &:after {
         content: "";
-        background: #b8a47e;
+        background: $active-color;
         width: 1px;
         height: 30px;
         position: absolute;
@@ -32,12 +38,14 @@
         bottom: 30px;
       }
     }
+
     &-arrow-up,
     &-arrow-down {
       display: block;
       width: 20px;
       padding: 5px;
       cursor: pointer;
+
       &:hover {
         opacity: 0.5;
       }
@@ -49,21 +57,20 @@
       align-items: center;
     }
     &-dot {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: #878787;
+      @include flex();
+      color: $secondary-color;
       width: 30px;
       height: 30px;
       border-radius: 50%;
       cursor: pointer;
-      font-size: 14px;
-      font-family: "Montserrat-Medium";
+      font-size: $font-size-small:;
+      font-family: $font-family;
+
       &:hover {
         width: 50px;
         height: 50px;
-        color: #000;
-        font-family: "Montserrat-Bold";
+        color: $primary-color;
+        font-family: $font-family-bold;
         box-shadow: 5px 26px 81px rgba(0, 15, 26, 0.21);
       }
     }
@@ -74,40 +81,45 @@
   }
 
   &__subtitle {
-    color: #383838;
-    font-family: "Montserrat-Light";
-    font-size: 18px;
+    color: $secondary-color;
+    font-family: $font-family-light;
+    font-size: $font-size-large;
   }
+
   &__title {
-    color: #000;
-    font-family: "Montserrat-Bold";
-    font-size: 36px;
+    color: $primary-color;
+    font-family: $font-family-bold;
+    font-size: 3$font-size-title;
     text-transform: uppercase;
     letter-spacing: 4px;
     padding-top: 30px;
   }
+
   &__link {
     width: 80px;
     display: block;
     padding-left: 70px;
     margin-top: 50px;
-    color: #b8a47e;
-    font-family: "Montserrat-Medium";
-    font-size: 16px;
+    color: $active-color;
+    font-family: $font-family;
+    font-size: $font-size-medium;
     text-decoration: none;
     position: relative;
+
     &:hover {
       opacity: 0.5;
     }
+
     &:before {
       content: "";
       position: absolute;
       height: 1px;
       width: 30px;
-      background: #b8a47e;
+      background: $active-color;
       top: 50%;
       left: 20px;
     }
+
     &:after {
       content: "";
       display: block;

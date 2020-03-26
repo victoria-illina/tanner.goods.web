@@ -1,3 +1,7 @@
+@import "mixin.scss";
+
+@import "variables.scss";
+
 .header {
   display: flex;
   align-items: center;
@@ -6,13 +10,11 @@
   top: 0;
 
   &__logo-container {
+    @include flex();
     width: 180px;
     height: 180px;
-    background: #b8a47e;
+    background: $active-color;
     border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     margin-top: -50px;
     margin-left: 10px;
     margin-right: 70px;
@@ -29,17 +31,17 @@
 
     &-item {
       margin-right: 60px;
-      font-family: "Montserrat-Medium";
+      font-family: $font-family;
     }
     &-link {
       text-decoration: none;
-      color: #000;
+      color: $primary-color;
       text-transform: uppercase;
       position: relative;
       letter-spacing: 1px;
 
       &:hover {
-        color: #b8a47e;
+        color: $active-color;
         &:before {
           display: block;
         }
@@ -50,7 +52,7 @@
 
       &:before {
         content: "";
-        background: #b8a47e;
+        background: $active-color;
         width: 20px;
         height: 1px;
         position: absolute;
@@ -60,7 +62,7 @@
       }
       &:after {
         content: "";
-        background: #b8a47e;
+        background: $active-color;
         width: 4px;
         height: 4px;
         border-radius: 50%;
