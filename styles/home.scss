@@ -63,7 +63,7 @@
       height: 30px;
       border-radius: 50%;
       cursor: pointer;
-      font-size: $font-size-small:;
+      font-size: $font-size-small;
       font-family: $font-family;
 
       &:hover {
@@ -89,7 +89,7 @@
   &__title {
     color: $primary-color;
     font-family: $font-family-bold;
-    font-size: 3$font-size-title;
+    font-size: $font-size-title;
     text-transform: uppercase;
     letter-spacing: 4px;
     padding-top: 30px;

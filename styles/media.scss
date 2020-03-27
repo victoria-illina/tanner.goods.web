@@ -1,0 +1,87 @@
+@import "variables.scss";
+
+@import "mixin.scss";
+
+@media (max-width: 1120px) {
+  .header {
+    &__nav {
+      display: none;
+    }
+  }
+
+  .products-slider__item {
+    &:nth-child(even) {
+      display: none;
+    }
+  }
+
+  .tanner {
+    &__primary-block {
+      flex-wrap: wrap;
+    }
+
+    &__secondary-block {
+      margin-top: 0;
+      flex-wrap: wrap;
+      margin-right: 0;
+
+      &-content {
+        width: 40%;
+      }
+    }
+
+    &__additional-block {
+      flex-wrap: wrap;
+    }
+
+    &__block-title {
+      &-line {
+        display: none;
+      }
+
+      &-bg {
+        &:before {
+          display: none;
+        }
+        &:after {
+          height: 80%;
+        }
+      }
+    }
+  }
+
+  .footer {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 0;
+
+    &__links-container {
+      display: none;
+    }
+
+    &__text {
+      display: none;
+    }
+
+    &__social-links {
+      flex-wrap: wrap;
+      align-items: center;
+    }
+
+    &__contact-container {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    &__contact-address {
+      padding: 15px 0;
+      text-align: center;
+    }
+
+    &__contact-email {
+      align-items: center;
+    }
+  }
+}
